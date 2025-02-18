@@ -7,7 +7,8 @@ function type() {
     if (index < text.length) {
         typingEffect.textContent += text.charAt(index);
         index++;
-        setTimeout(type, speed, 230);
+        setTimeout(type, speed); // Removed the extra argument
     }
 }
+
 type();
